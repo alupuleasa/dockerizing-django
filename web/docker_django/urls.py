@@ -4,4 +4,5 @@ from django.contrib import admin
 urlpatterns = [
     re_path(r'^admin/', admin.site.urls),
     re_path(r'^', include('docker_django.apps.todo.urls')),
+    path('__debug__/', include('debug_toolbar.urls')),
 ]
